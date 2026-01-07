@@ -1,6 +1,6 @@
 'use client';
 import { useCart } from '@/contexts/CartContext';
-import { X, Minus, Plus, Trash2 } from 'lucide-react';
+import { X, Minus, Plus, ShoppingBag, Trash2 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -103,9 +103,13 @@ export default function CartDrawer() {
                             <span className="text-xl font-bold text-gray-900">K{cartTotal.toFixed(2)}</span>
                         </div>
                         <p className="text-xs text-gray-500 mb-4 text-center">Shipping and taxes calculated at checkout.</p>
-                        <button className="w-full bg-black text-white py-4 rounded-md font-bold uppercase tracking-wide hover:bg-gray-800 transition-colors shadow-lg shadow-gray-200">
+                        <Link
+                            href="/checkout"
+                            onClick={toggleCart}
+                            className="block w-full bg-black text-white py-4 rounded-md font-bold uppercase tracking-wide hover:bg-gray-800 transition-colors shadow-lg shadow-gray-200 text-center"
+                        >
                             Checkout
-                        </button>
+                        </Link>
                     </div>
                 )}
             </div>
