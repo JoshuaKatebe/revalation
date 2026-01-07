@@ -8,8 +8,8 @@ import { LucideIcon } from 'lucide-react'; // Import simply to ensure lucide-rea
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "REVALATION | Premium Apparel",
-  description: "Modern streetwear and premium t-shirts.",
+  title: "REVEALED ARMOUR | Premium Apparel",
+  description: "Christian apparel for the modern warrior.",
 };
 
 export default function RootLayout({ children }) {
